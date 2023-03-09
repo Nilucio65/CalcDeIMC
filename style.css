@@ -1,0 +1,25 @@
+body{
+    background-color: rgb(151, 252, 142);
+    display: flex;
+    justify-content: center;
+   /* align-items: center;*/
+    margin-top: 15%;
+    
+    /*margin-left: 22cm;*/
+}
+
+button{
+    background-color: aquamarine;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: medium;
+    display: flex;
+    margin-left: 2.3cm;
+}
+
+#resp{
+    width: 3.8cm;
+}
+
+.h1{
+    margin-left: 1cm ;
+}
