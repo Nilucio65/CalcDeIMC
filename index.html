@@ -12,12 +12,8 @@
         peso = parseFloat(document.getElementById("peso").value);
         altura = parseFloat(document.getElementById("altura").value);
 
-        imc = peso/(altura*2);
+        imc = peso/(altura*altura);
         
-        if(document.querySelector('input[name="sexo"]:checked').value === "F"){
-
-        }
-        else{
             if(imc < 18.5){
                 document.getElementById("resp").value = "Abaixo do peso";
             }
@@ -36,7 +32,7 @@
             else if(imc >= 40){
                 document.getElementById("resp").value = "Obesidade Grau 3";
             }
-        }
+        
 
      }
     </script>
@@ -48,9 +44,6 @@
             <div >
                 Peso:&nbsp; <input type="text" id="peso"> <br><br>
                 Atura: <input type="text" id="altura"><br><br>
-                Sexo: <input type="radio" name="sexo" value="M" class="sexo" checked="true"> Masculino 
-                 <input type="radio" name="sexo" value="F" class="sexo"> Feminino
-                 <br><br>
             </div>
 
             <div class="divrow">
